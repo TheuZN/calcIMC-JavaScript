@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+        <div class="container">
+            <h1>O que é IMC</h1>
+            <p>
+                    IMC é o Índice de Massa Corporal através dele podemos verificar se um indivíduo está ou não em estado de obesidade ou magreza extrema, no entanto, o IMC refere-se apenas ao parâmetro de peso x altura e não mensura o estado nutricional de determinada pessoa e, dessa forma, não substitui um profissional especializado.
+            </p>
+
+            <div class="calc">
+                <h1>Calculadora de IMC</h1>
+
+                <h2>Sexo</h2>
+                <label for="feminino"><input type="checkbox" id="feminino" name="sexo">Feminino</label> <br>
+                <label for="masculino"><input type="checkbox" id="masculino" name="sexo">Masculino</label>
+                
+                <h2>Qual é o seu peso? (ex. 80,00)</h2>
+                <input id="peso" name="peso" type="number" placeholder="Digite seu peso">
+
+                <h2>Qual é a sua altura? (ex. 1,80)</h2>
+                <input id="altura" name="altura" type="number" placeholder="Digite sua altura"> <br>
+
+                <button onclick="calculo()">Calcular</button> <br>
+
+                <div id="resultado"></div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
